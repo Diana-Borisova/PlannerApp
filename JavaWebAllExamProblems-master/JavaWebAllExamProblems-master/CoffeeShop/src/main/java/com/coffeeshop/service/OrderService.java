@@ -31,6 +31,9 @@ public class OrderService {
 
     public boolean create(AddOrderDto addOrderDto) {
         Optional<User> user = this.userRepository.findById(loggedUser.getId());
+        if(user.isEmpty()){
+            return false;
+        }
         Order order = new Order();
         order.setName(addOrderDto.getName());
         order.setOrderTime(addOrderDto.getOrderTime());
