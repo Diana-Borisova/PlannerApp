@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>GIRA</title>
+    <link rel="icon" href="/img/projectLogo.png" type="image/icon type">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/reset-css.css">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+<div class="page-container">
+    <header th:include = "fragments/commons.html"></header>
+    <main class="content-wrap">
+        <h1 class="text-center mt-2"><span class="badge badge-pill badge-dark">Tasks</span></h1>
+        <hr class="hr-3 w-75 bg-white"/>
+        <form class="mx-auto w-75 " th:method="POST" th:action="@{/home}" th:object="${allTasks}" th:each = "task :${allTasks}">
+
+            <div class="card-group task-card">
+                <div class="card">
+
+                    <div class="card-title">
+                        <h5 class="card-title">Name</h5>
+                    </div>
+                    <div class="card-footer">
+                        <small th:text="${task.getName()}">Repair Laptop</small>
+                    </div>
+                </div>
+                <div class="card">
+
+                    <div class="card-title">
+                        <h5 class="card-title">Assigned to</h5>
+                    </div>
+                    <div class="card-footer">
+                        <small th:text="${task.getUser().getUsername()}">George</small>
+                    </div>
+                </div>
+                <div class="card">
+
+                    <div class="card-title">
+                        <h5 class="card-title">Classification</h5>
+                    </div>
+                    <div class="card-footer">
+                        <small th:class="'classifications ' + ${task.getClassification().getName().toString().toUpperCase()}" th:text="${task.getClassification().getName()}">SUPPORT</small>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-title">
+                        <h5 class="card-title">Due Date</h5>
+                    </div>
+                    <div class="card-footer">
+                        <small th:text="${task.getDueDae()}">2020-08-30</small>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-title">
+                        <h5 class="card-title">Progress</h5>
+                    </div>
+                    <div class="card-footer">
+                        <small th:text="${task.getProgress()}">OPEN</small>
+                    </div>
+                </div>
+
+                <a class="button prBtn" th:href="@{/progress/{id}(id = ${task.id})}">Progress</a>
+            </div>
+
+        </form>
+    </main>
+
+    <footer class="footer">
+        <div class="container-fluid text-center">
+            <div class="footer-background h6">
+                &copy; Spring team 2020. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+</div>
+</body>
+</html>

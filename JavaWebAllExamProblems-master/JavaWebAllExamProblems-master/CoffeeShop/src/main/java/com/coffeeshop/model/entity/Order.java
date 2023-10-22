@@ -22,12 +22,12 @@ public class Order {
     @Column (name = "order_time", nullable = false)
     private LocalDateTime orderTime;
 
-    @ManyToOne
-    private Category category;
+
 
     @Column(columnDefinition = "TEXT", nullable = false)
     private String description;
-
+    @ManyToOne
+    private Category category;
     @ManyToOne
     private User employee;
 

@@ -14,7 +14,7 @@ public class Artist {
     @Column(columnDefinition = "TEXT")
     private String careerInformation ;
 
-    @Column(nullable = false, unique = true)
+    @Column(nullable = false)
     @Enumerated(EnumType.STRING)
     private ArtistEnum name;
 

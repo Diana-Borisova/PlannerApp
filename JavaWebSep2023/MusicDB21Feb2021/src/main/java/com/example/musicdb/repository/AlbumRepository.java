@@ -17,7 +17,7 @@ public interface AlbumRepository extends JpaRepository<Album, Long> {
         Album findAlbumByGenreEnum(GenreEnum name);
 
          @Query("SELECT SUM(a.copies) FROM Album a")
-         int findTotalSumOfCopies();
+         Integer findTotalSumOfCopies();
 
 //    @Query("SELECT a.copies FROM Album a WHERE a.id = :albumId")
 //    List<Integer> getAllCopiesByAlbumId(@Param("albumId") Long albumId);

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+      <head>
+            <meta charset="UTF-8"/>
+            <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+            <title>Andrey's</title>
+            <link rel="stylesheet" href="/css/reset-css.css"/>
+            <link rel="stylesheet" href="/css/bootstrap.min.css"/>
+            <link rel="stylesheet" href="/css/style.css"/>
+        </head>
+<body>
+<header th:include = "fragments/commons.html"></header>
+    <main>
+        <h1 class="text-center mt-2"><span class="badge badge-pill badge-dark">Items</span></h1>
+        <h1 class="text-center mt-2"><span class="badge badge-pill badge-dark" th:method="POST" th:action="@{/home}" th:object="${totalItems}" th:text="|Total count of items: ${totalItems}|">Total count of items: </span></h1>
+        <hr class="hr-3"/>
+        <div class="bg-blur container w-50">
+            <div class="row mb-4 d-flex flex-column text-center" th:object="${allItems}" th:each="item : ${allItems}">
+                <a th:href="@{/items/details/{id}(id = ${item.id})}"><img library="img" th:src="'/img/' + ${item.getGenderEnum().name().toUpperCase()}+'-'+ ${item.getCategory().name} + '.jpg'" class="img-thumbnail" width="200"
+                      height="200"/>
+                </a>
+                 <h5 class="text-center" th:text="${item.name}">Buzzer</h5>
+                <h2 class="text-center" th:text="${item.price}">65.00</h2>
+            </div>
+        </div>
+    </main>
+<footer class="footer bg-dark  py-2">
+    <div class="container-fluid text-center">
+        <div class="footer-background h5 text-white">
+            & CopyRight Andrey's. All rights reserved.
+        </div>
+    </div>
+</footer>
+</body>
+</html>

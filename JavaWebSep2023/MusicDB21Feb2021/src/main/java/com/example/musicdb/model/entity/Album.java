@@ -35,7 +35,7 @@ public class Album {
     @Column(nullable = false)
     private LocalDate releaseDate;
 
-    @Column(nullable = false, unique = true)
+    @Column(nullable = false)
     @Enumerated(EnumType.ORDINAL)
     private GenreEnum genreEnum;
 

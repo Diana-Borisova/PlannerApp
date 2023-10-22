@@ -4,49 +4,251 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9fe6b826-ecea-4447-8fd8-f37144fb1e42" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../ShoppingList15Dec2021/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ShoppingList15Dec2021/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ShoppingList15Dec2021/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ShoppingList15Dec2021/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ShoppingList15Dec2021/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ShoppingList15Dec2021/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ShoppingList15Dec2021/pom.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ShoppingList15Dec2021/src/main/java/com/example/shoppinglist/ShoppingListApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ShoppingList15Dec2021/src/main/java/com/example/shoppinglist/controller/HomeController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ShoppingList15Dec2021/src/main/java/com/example/shoppinglist/controller/ProductController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ShoppingList15Dec2021/src/main/java/com/example/shoppinglist/controller/UserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ShoppingList15Dec2021/src/main/java/com/example/shoppinglist/init/CategoryInitializer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ShoppingList15Dec2021/src/main/java/com/example/shoppinglist/model/dto/AddProductDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ShoppingList15Dec2021/src/main/java/com/example/shoppinglist/model/dto/UserLoginDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ShoppingList15Dec2021/src/main/java/com/example/shoppinglist/model/dto/UserRegistrationDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ShoppingList15Dec2021/src/main/java/com/example/shoppinglist/model/entity/Category.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ShoppingList15Dec2021/src/main/java/com/example/shoppinglist/model/entity/CategoryEnum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ShoppingList15Dec2021/src/main/java/com/example/shoppinglist/model/entity/Product.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ShoppingList15Dec2021/src/main/java/com/example/shoppinglist/model/entity/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ShoppingList15Dec2021/src/main/java/com/example/shoppinglist/repository/CategoryRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ShoppingList15Dec2021/src/main/java/com/example/shoppinglist/repository/ProductRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ShoppingList15Dec2021/src/main/java/com/example/shoppinglist/repository/UserRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ShoppingList15Dec2021/src/main/java/com/example/shoppinglist/service/ProductService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ShoppingList15Dec2021/src/main/java/com/example/shoppinglist/service/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ShoppingList15Dec2021/src/main/java/com/example/shoppinglist/util/LoggedUser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ShoppingList15Dec2021/src/main/resources/application.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ShoppingList15Dec2021/src/main/resources/static/css/bootstrap.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ShoppingList15Dec2021/src/main/resources/static/css/reset-css.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ShoppingList15Dec2021/src/main/resources/static/css/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ShoppingList15Dec2021/src/main/resources/static/img/background.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ShoppingList15Dec2021/src/main/resources/static/img/drink.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ShoppingList15Dec2021/src/main/resources/static/img/food.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ShoppingList15Dec2021/src/main/resources/static/img/household.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ShoppingList15Dec2021/src/main/resources/static/img/other.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ShoppingList15Dec2021/src/main/resources/templates/fragments/commons.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ShoppingList15Dec2021/src/main/resources/templates/home.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ShoppingList15Dec2021/src/main/resources/templates/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ShoppingList15Dec2021/src/main/resources/templates/login.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ShoppingList15Dec2021/src/main/resources/templates/product-add.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ShoppingList15Dec2021/src/main/resources/templates/register.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ShoppingList15Dec2021/src/test/java/com/example/shoppinglist/ShoppingListApplicationTests.java" afterDir="false" />
+    <list default="true" id="9fe6b826-ecea-4447-8fd8-f37144fb1e42" name="Changes" comment="init">
+      <change afterPath="$PROJECT_DIR$/../../JavaWebAllExamProblems-master/JavaWebAllExamProblems-master/AppReseller/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaWebAllExamProblems-master/JavaWebAllExamProblems-master/LikeBook-App_Author-Solution - Copy/.idea/LikeBook-App_Author-Solution - Copy.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Andrey/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Andrey/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Andrey/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Andrey/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Andrey/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Andrey/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Andrey/pom.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Andrey/src/main/java/com/example/andrey/AndreyApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Andrey/src/main/java/com/example/andrey/config/DBConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Andrey/src/main/java/com/example/andrey/controller/HomeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Andrey/src/main/java/com/example/andrey/controller/ItemController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Andrey/src/main/java/com/example/andrey/controller/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Andrey/src/main/java/com/example/andrey/init/CategoryInitializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Andrey/src/main/java/com/example/andrey/model/dto/AddItemDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Andrey/src/main/java/com/example/andrey/model/dto/UserLoginDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Andrey/src/main/java/com/example/andrey/model/dto/UserRegistrationDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Andrey/src/main/java/com/example/andrey/model/entity/Category.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Andrey/src/main/java/com/example/andrey/model/entity/CategoryEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Andrey/src/main/java/com/example/andrey/model/entity/GenderEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Andrey/src/main/java/com/example/andrey/model/entity/Item.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Andrey/src/main/java/com/example/andrey/model/entity/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Andrey/src/main/java/com/example/andrey/repository/CategoryRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Andrey/src/main/java/com/example/andrey/repository/ItemRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Andrey/src/main/java/com/example/andrey/repository/UserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Andrey/src/main/java/com/example/andrey/service/ItemService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Andrey/src/main/java/com/example/andrey/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Andrey/src/main/java/com/example/andrey/util/LoggedUser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Andrey/src/main/resources/application.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Andrey/src/main/resources/static/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Andrey/src/main/resources/static/css/reset-css.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Andrey/src/main/resources/static/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Andrey/src/main/resources/static/img/FEMALE-DENIM.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Andrey/src/main/resources/static/img/FEMALE-JACKET.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Andrey/src/main/resources/static/img/FEMALE-SHIRT.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Andrey/src/main/resources/static/img/FEMALE-SHORTS.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Andrey/src/main/resources/static/img/MALE-DENIM.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Andrey/src/main/resources/static/img/MALE-JACKET.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Andrey/src/main/resources/static/img/MALE-SHIRT.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Andrey/src/main/resources/static/img/MALE-SHORTS.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Andrey/src/main/resources/static/img/background.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Andrey/src/main/resources/templates/add-product.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Andrey/src/main/resources/templates/details-product.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Andrey/src/main/resources/templates/fragments/commons.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Andrey/src/main/resources/templates/home.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Andrey/src/main/resources/templates/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Andrey/src/main/resources/templates/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Andrey/src/main/resources/templates/register.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Andrey/src/test/java/com/example/andrey/AndreyApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Gira/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Gira/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Gira/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Gira/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Gira/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Gira/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Gira/src/main/java/com/example/gira/GiraApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Gira/src/main/java/com/example/gira/controller/HomeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Gira/src/main/java/com/example/gira/controller/TaskController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Gira/src/main/java/com/example/gira/controller/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Gira/src/main/java/com/example/gira/init/ClassificationInitializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Gira/src/main/java/com/example/gira/model/dto/AddTaskDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Gira/src/main/java/com/example/gira/model/dto/UserLoginDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Gira/src/main/java/com/example/gira/model/dto/UserRegistrationDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Gira/src/main/java/com/example/gira/model/entity/Classification.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Gira/src/main/java/com/example/gira/model/entity/ClassificationEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Gira/src/main/java/com/example/gira/model/entity/ProgressEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Gira/src/main/java/com/example/gira/model/entity/Task.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Gira/src/main/java/com/example/gira/model/entity/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Gira/src/main/java/com/example/gira/repository/ClassificationRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Gira/src/main/java/com/example/gira/repository/TaskRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Gira/src/main/java/com/example/gira/repository/UserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Gira/src/main/java/com/example/gira/service/TaskService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Gira/src/main/java/com/example/gira/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Gira/src/main/java/com/example/gira/util/LoggedUser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Gira/src/main/resources/application.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Gira/src/main/resources/static/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Gira/src/main/resources/static/css/reset-css.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Gira/src/main/resources/static/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Gira/src/main/resources/static/img/background.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Gira/src/main/resources/static/img/projectLogo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Gira/src/main/resources/templates/add-task.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Gira/src/main/resources/templates/fragments/commons.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Gira/src/main/resources/templates/home.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Gira/src/main/resources/templates/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Gira/src/main/resources/templates/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Gira/src/main/resources/templates/register.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Gira/src/test/java/com/example/gira/GiraApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ResellerApp/ResellerApp/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ResellerApp/ResellerApp/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ResellerApp/ResellerApp/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ResellerApp/ResellerApp/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ResellerApp/ResellerApp/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ResellerApp/ResellerApp/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ResellerApp/ResellerApp/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ResellerApp/ResellerApp/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ResellerApp/ResellerApp/src/main/java/com/resellerapp/ResellerApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ResellerApp/ResellerApp/src/main/java/com/resellerapp/controller/HomeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ResellerApp/ResellerApp/src/main/java/com/resellerapp/controller/OfferController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ResellerApp/ResellerApp/src/main/java/com/resellerapp/controller/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ResellerApp/ResellerApp/src/main/java/com/resellerapp/init/ConditionInitializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ResellerApp/ResellerApp/src/main/java/com/resellerapp/model/dto/AddOfferDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ResellerApp/ResellerApp/src/main/java/com/resellerapp/model/dto/UserLoginDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ResellerApp/ResellerApp/src/main/java/com/resellerapp/model/dto/UserRegistrationDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ResellerApp/ResellerApp/src/main/java/com/resellerapp/model/entity/Condition.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ResellerApp/ResellerApp/src/main/java/com/resellerapp/model/entity/ConditionEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ResellerApp/ResellerApp/src/main/java/com/resellerapp/model/entity/Offer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ResellerApp/ResellerApp/src/main/java/com/resellerapp/model/entity/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ResellerApp/ResellerApp/src/main/java/com/resellerapp/repository/ConditionRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ResellerApp/ResellerApp/src/main/java/com/resellerapp/repository/OfferRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ResellerApp/ResellerApp/src/main/java/com/resellerapp/repository/UserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ResellerApp/ResellerApp/src/main/java/com/resellerapp/service/OfferService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ResellerApp/ResellerApp/src/main/java/com/resellerapp/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ResellerApp/ResellerApp/src/main/java/com/resellerapp/util/LoggedUser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ResellerApp/ResellerApp/src/main/resources/application.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ResellerApp/ResellerApp/src/main/resources/static/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ResellerApp/ResellerApp/src/main/resources/static/css/reset-css.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ResellerApp/ResellerApp/src/main/resources/static/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ResellerApp/ResellerApp/src/main/resources/static/img/background.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ResellerApp/ResellerApp/src/main/resources/static/img/buy.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ResellerApp/ResellerApp/src/main/resources/static/img/etiquette.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ResellerApp/ResellerApp/src/main/resources/templates/fragments/commons.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ResellerApp/ResellerApp/src/main/resources/templates/home.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ResellerApp/ResellerApp/src/main/resources/templates/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ResellerApp/ResellerApp/src/main/resources/templates/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ResellerApp/ResellerApp/src/main/resources/templates/offer-add.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ResellerApp/ResellerApp/src/main/resources/templates/register.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ResellerApp/ResellerApp/src/test/java/com/resellerapp/ResellerApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ResellerApp/ResellerApp/target/classes/application.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ResellerApp/ResellerApp/target/classes/com/resellerapp/ResellerApplication.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ResellerApp/ResellerApp/target/classes/com/resellerapp/model/entity/Condition.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ResellerApp/ResellerApp/target/classes/com/resellerapp/model/entity/ConditionEnum.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ResellerApp/ResellerApp/target/classes/com/resellerapp/model/entity/Offer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ResellerApp/ResellerApp/target/classes/com/resellerapp/model/entity/User.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ResellerApp/ResellerApp/target/classes/static/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ResellerApp/ResellerApp/target/classes/static/css/reset-css.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ResellerApp/ResellerApp/target/classes/static/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ResellerApp/ResellerApp/target/classes/static/img/background.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ResellerApp/ResellerApp/target/classes/static/img/buy.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ResellerApp/ResellerApp/target/classes/static/img/etiquette.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ResellerApp/ResellerApp/target/classes/templates/fragments/commons.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ResellerApp/ResellerApp/target/classes/templates/home.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ResellerApp/ResellerApp/target/classes/templates/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ResellerApp/ResellerApp/target/classes/templates/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ResellerApp/ResellerApp/target/classes/templates/offer-add.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ResellerApp/ResellerApp/target/classes/templates/register.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../heroes/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../heroes/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../heroes/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../heroes/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../heroes/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../heroes/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../heroes/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../heroes/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../heroes/src/main/java/com/softuni/heros/HerosApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../heroes/src/main/java/com/softuni/heros/config/BeanConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../heroes/src/main/java/com/softuni/heros/entity/BaseEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../heroes/src/main/java/com/softuni/heros/entity/ClassEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../heroes/src/main/java/com/softuni/heros/entity/Hero.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../heroes/src/main/java/com/softuni/heros/entity/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../heroes/src/main/java/com/softuni/heros/entity/binding/HeroCreateBindingModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../heroes/src/main/java/com/softuni/heros/entity/binding/UserLoginBindingModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../heroes/src/main/java/com/softuni/heros/entity/binding/UserRegisterBindingModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../heroes/src/main/java/com/softuni/heros/entity/services/HeroServiceModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../heroes/src/main/java/com/softuni/heros/entity/services/UserServiceModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../heroes/src/main/java/com/softuni/heros/repository/HeroRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../heroes/src/main/java/com/softuni/heros/repository/UserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../heroes/src/main/java/com/softuni/heros/service/HeroService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../heroes/src/main/java/com/softuni/heros/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../heroes/src/main/java/com/softuni/heros/service/serviceImpl/HeroServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../heroes/src/main/java/com/softuni/heros/service/serviceImpl/UserServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../heroes/src/main/java/com/softuni/heros/utils/LoggedUser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../heroes/src/main/java/com/softuni/heros/web/HeroController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../heroes/src/main/java/com/softuni/heros/web/HomeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../heroes/src/main/java/com/softuni/heros/web/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../heroes/src/main/resources/application.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../heroes/src/main/resources/static/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../heroes/src/main/resources/static/css/reset-css.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../heroes/src/main/resources/static/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../heroes/src/main/resources/static/img/archer.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../heroes/src/main/resources/static/img/background.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../heroes/src/main/resources/static/img/mage.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../heroes/src/main/resources/static/img/warrior.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../heroes/src/main/resources/templates/create-hero.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../heroes/src/main/resources/templates/delete-hero.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../heroes/src/main/resources/templates/details-hero.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../heroes/src/main/resources/templates/fragments/navbar.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../heroes/src/main/resources/templates/fragments/navigation.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../heroes/src/main/resources/templates/home.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../heroes/src/main/resources/templates/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../heroes/src/main/resources/templates/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../heroes/src/main/resources/templates/register.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../heroes/src/test/java/com/softuni/heros/HerosApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../heroes/target/classes/application.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../heroes/target/classes/com/softuni/heros/HerosApplication.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../heroes/target/classes/com/softuni/heros/config/BeanConfiguration.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../heroes/target/classes/com/softuni/heros/entity/BaseEntity.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../heroes/target/classes/com/softuni/heros/entity/ClassEnum.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../heroes/target/classes/com/softuni/heros/entity/Hero.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../heroes/target/classes/com/softuni/heros/entity/User.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../heroes/target/classes/com/softuni/heros/entity/binding/HeroCreateBindingModel.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../heroes/target/classes/com/softuni/heros/entity/binding/UserLoginBindingModel.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../heroes/target/classes/com/softuni/heros/entity/binding/UserRegisterBindingModel.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../heroes/target/classes/com/softuni/heros/entity/services/HeroServiceModel.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../heroes/target/classes/com/softuni/heros/entity/services/UserServiceModel.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../heroes/target/classes/com/softuni/heros/repository/HeroRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../heroes/target/classes/com/softuni/heros/repository/UserRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../heroes/target/classes/com/softuni/heros/service/HeroService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../heroes/target/classes/com/softuni/heros/service/UserService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../heroes/target/classes/com/softuni/heros/service/serviceImpl/HeroServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../heroes/target/classes/com/softuni/heros/service/serviceImpl/UserServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../heroes/target/classes/com/softuni/heros/utils/LoggedUser.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../heroes/target/classes/com/softuni/heros/web/HeroController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../heroes/target/classes/com/softuni/heros/web/HomeController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../heroes/target/classes/com/softuni/heros/web/UserController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../heroes/target/classes/static/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../heroes/target/classes/static/css/reset-css.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../heroes/target/classes/static/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../heroes/target/classes/static/img/archer.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../heroes/target/classes/static/img/background.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../heroes/target/classes/static/img/mage.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../heroes/target/classes/static/img/warrior.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../heroes/target/classes/templates/create-hero.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../heroes/target/classes/templates/delete-hero.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../heroes/target/classes/templates/details-hero.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../heroes/target/classes/templates/fragments/navbar.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../heroes/target/classes/templates/fragments/navigation.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../heroes/target/classes/templates/home.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../heroes/target/classes/templates/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../heroes/target/classes/templates/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../heroes/target/classes/templates/register.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../JavaWebAllExamProblems" beforeDir="false" afterPath="$PROJECT_DIR$/../../JavaWebAllExamProblems" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaWebAllExamProblems-master/LikeBook_Resources/LikeBookApp/src/main/java/com/likebookapp/repository/MoodRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../JavaWebAllExamProblems-master/LikeBook_Resources/LikeBookApp/src/main/java/com/likebookapp/repository/MoodRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LikeBook17Aug2022/likebook/src/main/java/com/likebookapp/service/PostService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../LikeBook17Aug2022/likebook/src/main/java/com/likebookapp/service/PostService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MusicDB21Feb2021/src/main/java/com/example/musicdb/model/entity/Album.java" beforeDir="false" afterPath="$PROJECT_DIR$/../MusicDB21Feb2021/src/main/java/com/example/musicdb/model/entity/Album.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MusicDB21Feb2021/src/main/java/com/example/musicdb/model/entity/Artist.java" beforeDir="false" afterPath="$PROJECT_DIR$/../MusicDB21Feb2021/src/main/java/com/example/musicdb/model/entity/Artist.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MusicDB21Feb2021/src/main/java/com/example/musicdb/repository/AlbumRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../MusicDB21Feb2021/src/main/java/com/example/musicdb/repository/AlbumRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MusicDB21Feb2021/src/main/java/com/example/musicdb/service/AlbumService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../MusicDB21Feb2021/src/main/java/com/example/musicdb/service/AlbumService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MusicDB21Feb2021/src/main/resources/templates/fragments/commons.html" beforeDir="false" afterPath="$PROJECT_DIR$/../MusicDB21Feb2021/src/main/resources/templates/fragments/commons.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ShoppingList15Dec2021/src/main/java/com/example/shoppinglist/model/entity/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ShoppingList15Dec2021/src/main/java/com/example/shoppinglist/model/entity/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ShoppingList15Dec2021/src/main/java/com/example/shoppinglist/repository/ProductRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ShoppingList15Dec2021/src/main/java/com/example/shoppinglist/repository/ProductRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ShoppingList15Dec2021/src/main/java/com/example/shoppinglist/service/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ShoppingList15Dec2021/src/main/java/com/example/shoppinglist/service/ProductService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,6 +297,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "spring.configuration.checksum": "a4c6eb24ca37aa8c1a27c545e020d1fc",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
@@ -140,10 +343,35 @@
       <option name="presentableId" value="Default" />
       <updated>1696356022541</updated>
       <workItem from="1696356023608" duration="34453000" />
+      <workItem from="1696564731891" duration="123000" />
+      <workItem from="1697314867878" duration="109000" />
     </task>
+    <task id="LOCAL-00001" summary="init">
+      <created>1696564760986</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1696564760986</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="init" />
+    <option name="LAST_COMMIT_MESSAGE" value="init" />
   </component>
 </project>

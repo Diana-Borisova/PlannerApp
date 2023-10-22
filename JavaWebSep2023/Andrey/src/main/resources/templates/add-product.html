@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+      <head>
+            <meta charset="UTF-8"/>
+            <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+            <title>Andrey's</title>
+            <link rel="stylesheet" href="/css/reset-css.css"/>
+            <link rel="stylesheet" href="/css/bootstrap.min.css"/>
+            <link rel="stylesheet" href="/css/style.css"/>
+        </head>
+<body>
+<header th:include = "fragments/commons.html"></header>
+    <main>
+        <h1 class="text-center mt-2"><span class="badge badge-pill badge-dark">Add Product</span></h1>
+        <hr class="hr-3"/>
+        <form class="mx-auto w-25 bg-blur" th:action="@{/items/add}" th:method="POST" th:object="${addItemDto}">
+            <div class="form-group">
+                <div class="text-white label-holder d-flex justify-content-center">
+                    <label for="name" class="h4 mb-2">Name</label>
+                </div>
+                <input th:field="*{name}" th:errorclass="text-danger" type="text" class="form-control" id="name" name="name"/>
+                <small th:if="${#fields.hasErrors('name')}" th:errors="*{name}" id="nameError" class="form-text text-danger">Incorrect name!</small>
+            </div>
+            <div class="form-group">
+                <div class="text-white label-holder d-flex justify-content-center">
+                    <label for="description" class="h4 mb-2">Description</label>
+                </div>
+                <input th:field="*{description}" th:errorclass="text-danger" type="text" class="form-control" id="description" name="description"/>
+                <small th:if="${#fields.hasErrors('description')}" th:errors="*{description}"  id="descriptionError" class="form-text text-danger">Description length must be more than 5 characters</small>
+
+            </div>
+            <div class="form-group">
+                <div class="text-white label-holder d-flex justify-content-center">
+                    <label for="category" class="h4 mb-2">Category</label>
+                </div>
+                <select th:field="*{categoryEnum}" name="category"  class="form-control" id="category"
+                >
+                    <option value="" selected>Select category</option>
+                    <option th:each = "c :${T(com.example.andrey.model.entity.CategoryEnum).values()}"
+                            th:value="${c}" th:text="${c}"></option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <div class="text-white label-holder d-flex justify-content-center">
+                    <label for="sex" class="h4 mb-2">Gender</label>
+                </div>
+                <select th:field="*{genderEnum}" name="sex" class="form-control" id="sex"
+                        >
+                    <option value="" selected>Select category</option>
+                    <option th:each = "g :${T(com.example.andrey.model.entity.GenderEnum).values()}"
+                            th:value="${g}" th:text="${g}"></option>
+                </select>
+            </div>
+            <div class="form-group">
+                <div class="text-white label-holder d-flex justify-content-center">
+                    <label for="price" class="h4 mb-2">Price</label>
+                </div>
+                <input th:field="*{price}" th:errorclass="text-danger" type="number" class="form-control" id="price" name="price"/>
+                <small th:if="${#fields.hasErrors('price')}" th:errors="*{price}" id="priceError" class="form-text text-danger">Price must be positive</small>
+
+            </div>
+            <div class="button-holder d-flex justify-content-center">
+                <button type="submit" class="btn btn-secondary text-white mb-3">Add Product</button>
+            </div>
+        </form>
+    </main>
+    <footer class="footer bg-dark  py-2">
+            <div class="container-fluid text-center">
+                <div class="footer-background h5 text-white">
+                     & CopyRight Andrey's. All rights reserved.
+                </div>
+            </div>
+        </footer>
+</body>
+</html>

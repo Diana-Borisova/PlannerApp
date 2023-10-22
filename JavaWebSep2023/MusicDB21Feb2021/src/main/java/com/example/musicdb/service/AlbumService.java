@@ -52,8 +52,10 @@ public class AlbumService {
         return true;
     }
 
-    public int getCountOfAllCopies(){
-
+    public Integer getCountOfAllCopies(){
+        if(this.albumRepository.findTotalSumOfCopies() == null){
+            return 0;
+        }
         return this.albumRepository.findTotalSumOfCopies();
     }
     

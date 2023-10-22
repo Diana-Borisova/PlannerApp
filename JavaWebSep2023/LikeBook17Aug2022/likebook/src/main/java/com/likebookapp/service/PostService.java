@@ -52,7 +52,9 @@ public class PostService {
         Optional<Post> post = this.postRepository.findById(postId);
 
         if (post.isPresent() && !post.get().getUserLikes().contains(user)){
-            post.get().setUserLikes(user);
+           if(post.get().getUserLikes().size() == 0){
+               post.get().setUserLikes(user);
+           }
             this.postRepository.save(post.get());
         }
     }

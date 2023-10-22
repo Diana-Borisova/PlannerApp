@@ -12,6 +12,7 @@ import com.example.shoppinglist.util.LoggedUser;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
@@ -56,8 +57,11 @@ public class ProductService {
     }
 
    public String getTotalSum(){
-        double sum = this.productRepository.findTotalProductsSum();
-        return String.format("%.2f",sum);
+        if(this.productRepository.findTotalProductsSum()!=null){
+            return      String.format("%.2f",this.productRepository.findTotalProductsSum());
+
+        }
+       return "0.00";
    }
 
     public List<Product> getAllDrinks() {
