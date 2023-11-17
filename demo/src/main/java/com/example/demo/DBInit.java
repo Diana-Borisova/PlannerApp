@@ -1,7 +1,9 @@
 package com.example.demo;
 
 import com.example.demo.service.UserRoleService;
+
 import com.example.demo.service.UserService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 
@@ -11,6 +13,7 @@ public class DBInit implements CommandLineRunner {
     private final UserService userService;
     private final UserRoleService userRoleService;
 
+    @Autowired
     public DBInit(UserService userService, UserRoleService userRoleService) {
         this.userService = userService;
         this.userRoleService = userRoleService;

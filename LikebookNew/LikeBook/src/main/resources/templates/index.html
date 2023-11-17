@@ -5,7 +5,7 @@
 <body>
 <header th:replace="fragments/commons::nav"></header>
 <main>
-    <div class="container bg-blur rounded mt-5 ">
+    <div class="container bg-blur rounded mt-5 " th:action="@{/}" th:method="POST">
         <h1>Welcome to LikeBook App</h1>
         <hr class="my-3 bg-white w-50"/>
 

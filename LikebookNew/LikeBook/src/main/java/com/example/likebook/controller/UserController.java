@@ -76,36 +76,53 @@ public class UserController {
     }
 
 
+    @PostMapping("/login-error")
+    public String onFailure(
+            @ModelAttribute("email") String username,
+            Model model) {
 
-    @PostMapping("/login")
-    public String login(@Valid  @ModelAttribute(name = "userLoginDto") UserLoginDto userLoginDto,
-                        BindingResult bindingResult,
-                        RedirectAttributes redirectAttributes){
-        if(loggedUser.getId() != null){
-            return "redirect:/home";
-        }
+        model.addAttribute("username", username);
+        model.addAttribute("badCredentials", "true");
 
-        if( !this.userService.login(userLoginDto)){
-            redirectAttributes.addFlashAttribute("userLoginDto", userLoginDto);
-            redirectAttributes.addFlashAttribute("badCredentials", true);
-
-            if (bindingResult.hasErrors() ) {
-
-                redirectAttributes.addFlashAttribute("userLoginDto", userLoginDto);
-                redirectAttributes.addFlashAttribute("org.springframework.validation.BindingResult.userLoginDto",
-                        bindingResult);
-                redirectAttributes.addFlashAttribute("badCredentials", false);
-                return "redirect:/login";
-            }
-            return "redirect:/login";
-        }
-
-        return "redirect:/home";
+        return "login";
     }
+//    @PostMapping("/login")
+//    public String login(@Valid  @ModelAttribute(name = "userLoginDto") UserLoginDto userLoginDto,
+//                        BindingResult bindingResult,
+//                        RedirectAttributes redirectAttributes){
+//        if(loggedUser.getId() != null){
+//            return "redirect:/home";
+//        }
+//
+//        if( !this.userService.login(userLoginDto)){
+//            redirectAttributes.addFlashAttribute("userLoginDto", userLoginDto);
+//            redirectAttributes.addFlashAttribute("badCredentials", true);
+//
+//            if (bindingResult.hasErrors() ) {
+//
+//                redirectAttributes.addFlashAttribute("userLoginDto", userLoginDto);
+//                redirectAttributes.addFlashAttribute("org.springframework.validation.BindingResult.userLoginDto",
+//                        bindingResult);
+//                redirectAttributes.addFlashAttribute("badCredentials", false);
+//                return "redirect:/login";
+//            }
+//            return "redirect:/login";
+//        }
+//
+//        return "redirect:/home";
+//    }
 
-    @GetMapping("/logout")
-    public String logout(HttpSession httpSession){
-        httpSession.invalidate();
-        return "redirect:/";
-    }
+//    @PostMapping("/login-error")
+//    public String loginFail(@ModelAttribute("email") String username,
+//                            RedirectAttributes redirectAttributes) {
+//        redirectAttributes.addFlashAttribute("badCredentials", true);
+//        redirectAttributes.addFlashAttribute("username", username);
+//        return "redirect:login";
+//    }
+
+//    @GetMapping("/logout")
+//    public String logout(HttpSession httpSession){
+//        httpSession.invalidate();
+//        return "redirect:/";
+//    }
 }

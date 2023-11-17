@@ -12,12 +12,12 @@ import java.util.Optional;
 @Service
 public class UserService {
     private final UserRepository userRepository;
-    private final LoggedUser loggedUser;
 
 
-    public UserService(UserRepository userRepository, LoggedUser loggedUser) {
+
+    public UserService(UserRepository userRepository) {
         this.userRepository = userRepository;
-        this.loggedUser = loggedUser;
+
 
     }
 
@@ -27,8 +27,8 @@ public class UserService {
         if (user.isEmpty()) {
             return false;
         }
-        loggedUser.setId(user.get().getId());
-        loggedUser.setUsername(user.get().getUsername());
+//        loggedUser.setId(user.get().getId());
+//        loggedUser.setUsername(user.get().getUsername());
 
         return true;
     }

@@ -18,18 +18,17 @@ public class HomeController {
 
     private final LoggedUser loggedUser;
     private final PostService postService;
-    private final UserService userService;
+//    private final UserService userService;
 
 
     @Autowired
-    public HomeController(LoggedUser loggedUser, PostService postService, UserService userService) {
+    public HomeController(LoggedUser loggedUser, PostService postService) {
 
 
         this.loggedUser = loggedUser;
         this.postService = postService;
-        this.userService = userService;
-
-    }
+//        this.userService = userService;
+}
 
 
     @GetMapping("/")

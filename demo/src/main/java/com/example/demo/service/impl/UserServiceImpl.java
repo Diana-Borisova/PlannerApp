@@ -1,13 +1,14 @@
 package com.example.demo.service.impl;
 
-
-import com.example.demo.entity.User;
-import com.example.demo.entity.enums.RoleEnum;
-import com.example.demo.entity.service.UserServiceModel;
-import com.example.demo.entity.view.UserRoleViewModel;
 import com.example.demo.exception.EntityNotFoundException;
+import com.example.demo.model.Constants;
+import com.example.demo.model.entity.User;
+import com.example.demo.model.entity.enums.RoleEnum;
+import com.example.demo.model.entity.view.UserRoleViewModel;
+import com.example.demo.model.service.UserServiceModel;
 import com.example.demo.repository.UserRepository;
 import com.example.demo.repository.UserRoleRepository;
+import com.example.demo.service.CloudinaryService;
 import com.example.demo.service.UserService;
 import org.modelmapper.ModelMapper;
 import org.springframework.security.crypto.password.PasswordEncoder;
@@ -23,27 +24,29 @@ public class UserServiceImpl implements UserService {
     private final UserRepository userRepository;
     private final UserRoleRepository userRoleRepository;
     private final PasswordEncoder passwordEncoder;
-
+    private final CloudinaryService cloudinaryService;
     private final ModelMapper modelMapper;
+   // private final ReservationService reservationService;
 
-
-    public UserServiceImpl(UserRepository userRepository, UserRoleRepository userRoleRepository, PasswordEncoder passwordEncoder, ModelMapper modelMapper) {
+    public UserServiceImpl(UserRepository userRepository, UserRoleRepository userRoleRepository, PasswordEncoder passwordEncoder, CloudinaryService cloudinaryService, ModelMapper modelMapper) {
         this.userRepository = userRepository;
         this.userRoleRepository = userRoleRepository;
         this.passwordEncoder = passwordEncoder;
-
+        this.cloudinaryService = cloudinaryService;
         this.modelMapper = modelMapper;
-
+        //this.reservationService = reservationService;
     }
 
     @Override
     public void populateInitialUsers() {
         if (userRepository.count() == 0) {
-            User admin = new User();
-            admin.setUsername("admin");
-            admin.setEmail("admin@abv.bg");
-            admin.setPassword(passwordEncoder.encode("topsecret"));
-            admin.setRoles(List.of(
+            User admin = new User().
+                    setFirstName("Admin").
+                    setLastName("Admin").
+                    setEmail("admin@abv.bg").
+                    setPassword(passwordEncoder.encode("topsecret")).
+                    setProfilePicture(Constants.DEFAULT_PROFILE_PICTURE).
+                    setRoles(List.of(
                             userRoleRepository.getUserRoleByName(RoleEnum.ADMIN).orElseThrow(() -> new EntityNotFoundException("UserRole")),
                             userRoleRepository.getUserRoleByName(RoleEnum.USER).orElseThrow(() -> new EntityNotFoundException("UserRole"))
                     ));
@@ -54,14 +57,27 @@ public class UserServiceImpl implements UserService {
     @Override
     public Long registerUser(UserServiceModel userServiceModel) throws IOException {
         User user = modelMapper.map(userServiceModel, User.class);
-      user.setUsername(userServiceModel.getUsername());
-      user.setEmail(userServiceModel.getEmail());
+        if (userServiceModel.getProfilePicture()!=null && !userServiceModel.getProfilePicture().isEmpty()) {
+            user.setProfilePicture(cloudinaryService.
+                    uploadImage(userServiceModel.
+                            getProfilePicture()));
+        } else {
+            user.setProfilePicture(Constants.DEFAULT_PROFILE_PICTURE);
+        }
         user.setPassword(passwordEncoder.
                 encode(userServiceModel.getPassword()));
 
+
+        if (userServiceModel.isHotelOwner()) {
+            user.setRoles(List.of(userRoleRepository.getUserRoleByName(RoleEnum.USER).
+                            orElseThrow(() -> new EntityNotFoundException("UserRole")),
+                    userRoleRepository.getUserRoleByName(RoleEnum.HOTEL_OWNER).
+                            orElseThrow(() -> new EntityNotFoundException("UserRole"))));
+        } else {
             user.setRoles(List.of(userRoleRepository.
                     getUserRoleByName(RoleEnum.USER).
                     orElseThrow(() -> new EntityNotFoundException("UserRole"))));
+        }
         return userRepository.save(user).getId();
     }
 
@@ -77,16 +93,27 @@ public class UserServiceImpl implements UserService {
                 orElseThrow(() -> new EntityNotFoundException("User"));
     }
 
+//    @Override
+//    public List<ReservationServiceModel> getUserReservationsByEmail(String email) {
+//        return reservationService.getReservationsByUser(userRepository.findUserByEmail(email).
+//                orElseThrow(() -> new EntityNotFoundException("User")));
+//    }
 
 
-    @Override
     public void updateUser(UserServiceModel userServiceModel) throws IOException {
         User user = userRepository.findById(userServiceModel.getId()).
                 orElseThrow(() -> new EntityNotFoundException("User"));
-        user.setUsername(userServiceModel.getUsername());
-        user.setEmail(userServiceModel.getEmail());
-        user.setPassword(user.getPassword());
-
+        user.
+                setEmail(userServiceModel.getEmail()).
+                setFirstName(userServiceModel.getFirstName()).
+                setLastName(userServiceModel.getLastName()).
+                setPhoneNumber(userServiceModel.getPhoneNumber());
+        if (userServiceModel.getProfilePicture() != null) {
+            if (!"".equals(userServiceModel.getProfilePicture().getOriginalFilename())) {
+                cloudinaryService.deleteByUrl(user.getProfilePicture());
+                user.setProfilePicture(cloudinaryService.uploadImage(userServiceModel.getProfilePicture()));
+            }
+        }
         userRepository.save(user);
     }
 
@@ -122,5 +149,11 @@ public class UserServiceImpl implements UserService {
         userRepository.save(user);
     }
 
-
+    @Override
+    public String getUserProfilePicture(String email) {
+        return userRepository.
+                findUserByEmail(email).
+                orElseThrow(() -> new EntityNotFoundException("User")).
+                getProfilePicture();
+    }
 }

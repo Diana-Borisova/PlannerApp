@@ -27,3 +27,7 @@ logging:
     blog: WARN
 server:
   port: 8002
+cloudinary:
+  cloud-name: dbeukad1v
+  api-key: 454669545666359
+  api-secret: "${CLOUDINARY_SECRET}"

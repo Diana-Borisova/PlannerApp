@@ -2,10 +2,11 @@ package com.example.demo.service;
 
 
 
-import com.example.demo.entity.User;
-import com.example.demo.entity.enums.RoleEnum;
-import com.example.demo.entity.service.UserServiceModel;
-import com.example.demo.entity.view.UserRoleViewModel;
+import com.example.demo.model.entity.User;
+import com.example.demo.model.entity.enums.RoleEnum;
+
+import com.example.demo.model.entity.view.UserRoleViewModel;
+import com.example.demo.model.service.UserServiceModel;
 
 import java.io.IOException;
 import java.util.List;
@@ -29,5 +30,5 @@ public interface UserService {
 
     void setUserRoles(Long userId, List<RoleEnum> roles);
 
-
+    String getUserProfilePicture(String username);
 }
